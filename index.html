@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Contact form using Bootstrap 3 and Google Maps API for CS 120</title>
+
+
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+   <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Contact Farhan From CS 120<i class="fa fa-paper-plane-o"></i></h2>
+                </div>
+            </div>
+            <div id="map-canvas"></div>
+            <div class="row">
+                <form method="post" action="contact.php" name="contactform" id="contactform">
+                    <div class="col-md-6">
+                        <fieldset>
+                            <input name="name" type="text" id="name" size="30" placeholder="Name">
+                            <br>
+                            <input name="email" type="text" id="email" size="30" placeholder="Email">
+                            <br>
+                            <input name="phone" type="text" id="phone" size="30" placeholder="Phone">
+                            <br>
+                            <input name="human" type="text" id="human" size="30" placeholder="Prove you are smart like Farhan... What is 9+1?">
+                            <br>
+                        </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                        <fieldset>
+                            <textarea name="comments" cols="40" rows="20" id="comments" placeholder="Message"></textarea>
+                        </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                        <fieldset>
+                            <button type="submit" class="btn btn-lg" id="submit" value="Submit">Send Message</button>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Google Maps API-->
+    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIfVZUlFDGWqJMGwZ358BspuoqbAoPbl8&callback=initMap"></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
